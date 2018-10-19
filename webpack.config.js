@@ -12,9 +12,7 @@ module.exports = env => {
   const { PLATFORM, VERSION } = env
   return merge([
     {
-      entry: {
-        bundle: APP_DIR + '/index.js'
-      },
+      entry: ['@babel/polyfill', APP_DIR],
       output: {
         path: BUILD_DIR,
         filename: '[name].js'
