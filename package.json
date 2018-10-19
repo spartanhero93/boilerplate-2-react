@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --mode development --config webpack.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
-    "prebuild": "webpack --mode production --config webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress",
-    "build": "webpack"
+    "prebuild": "webpack --mode production --config webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress"
   },
   "keywords": [],
   "author": "",
